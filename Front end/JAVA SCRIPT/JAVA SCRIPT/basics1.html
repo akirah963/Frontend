@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort Flowers in Descending Order</title>
+</head>
+<body>
+
+    <h2>Flowers List</h2>
+    <p id="flowers">Rose, Sunflower, Marigold, Lily, Jasmine</p>
+    <button onclick="sortFlowers()">Sort Descending</button>
+
+    <script>
+        
+        let flowers = ["Rose", "Sunflower", "Marigold", "Lily", "Jasmine"];
+        function sortFlowers() {
+            flowers.sort().reverse(); // Sorting in descending order
+            document.getElementById("flowers").textContent = flowers.join(", "); 
+        }
+    </script>
+
+</body>
+</html>
